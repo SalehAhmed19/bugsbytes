@@ -18,25 +18,6 @@ const Banner = () => {
             <Fade big>
               <img className="w-10 lg:w-56 m-5" src={MainLogo} alt="" />
             </Fade>
-            {/* <AnimatedText
-              type="char" // animate words or chars
-              animation={{
-                x: "200px",
-                y: "-20px",
-                scale: 1.1,
-                ease: "ease-in-out",
-              }}
-              animationType="wave"
-              interval={0.06}
-              duration={0.8}
-              tag="h1"
-              className="animated-paragraph text-xl lg:text-6xl font-bold text-[#54B65B]"
-              includeWhiteSpaces
-              threshold={0.1}
-              rootMargin="20%"
-            >
-              BugsBytes
-            </AnimatedText> */}
             <HeadShake forever={true}>
               <h1 className="text-xl lg:text-6xl font-bold text-[#54B65B]">
                 BugsBytes

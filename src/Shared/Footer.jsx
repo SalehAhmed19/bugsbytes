@@ -52,12 +52,12 @@ const Footer = () => {
   ];
   return (
     <Fade up>
-      <div className="bg-[#020E09] relative">
+      <div className="bg-[#020E09] relative w-full">
         <Fade right>
-          <div className="bg-[#079C34] h-40 w-40 rounded-full absolute -right-20 bottom-60"></div>
+          <div className="bg-[#079C34] h-40 w-40 rounded-full absolute -right-20 bottom-60 hidden lg:block"></div>
         </Fade>
         <Fade left>
-          <div className="bg-[#079C34] h-60 w-80 rounded-full absolute -left-40 bottom-0"></div>
+          <div className="bg-[#079C34] h-60 w-96 rounded-full absolute -left-40 bottom-0 hidden lg:block"></div>
         </Fade>
         <Container
           maxWidth="md"
