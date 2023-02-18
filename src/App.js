@@ -2,12 +2,14 @@ import React from "react";
 import "./App.css";
 import Home from "./Pages/Home";
 import ButtonAppBar from "./Shared/ButtonAppBar";
+import Footer from "./Shared/Footer";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="bg-[#02411C]">
       <ButtonAppBar />
       <Home />
+      <Footer />
     </div>
   );
 };
