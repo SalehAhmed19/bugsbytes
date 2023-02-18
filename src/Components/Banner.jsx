@@ -1,5 +1,7 @@
 import React from "react";
 import Pulse from "react-reveal/Pulse";
+import Fade from "react-reveal/Fade";
+import HeadShake from "react-reveal/HeadShake";
 import AnimatedText from "react-animated-text-content";
 import MainLogo from "../Assets/Img/logo-bb-2.png";
 import VideoBG from "../Assets/VideoBg/video4.mp4";
@@ -13,8 +15,10 @@ const Banner = () => {
       <div className="absolute w-full lg:h-full top-0 ">
         <div className="flex justify-between items-center lg:mt-20 mt-5 lg:px-20">
           <div className="flex flex-col justify-center items-center lg:mt-0 mt-5 w-full">
-            <img className="w-10 lg:w-56 m-5" src={MainLogo} alt="" />
-            <AnimatedText
+            <Fade big>
+              <img className="w-10 lg:w-56 m-5" src={MainLogo} alt="" />
+            </Fade>
+            {/* <AnimatedText
               type="char" // animate words or chars
               animation={{
                 x: "200px",
@@ -32,7 +36,12 @@ const Banner = () => {
               rootMargin="20%"
             >
               BugsBytes
-            </AnimatedText>
+            </AnimatedText> */}
+            <HeadShake forever={true}>
+              <h1 className="text-xl lg:text-6xl font-bold text-[#54B65B]">
+                BugsBytes
+              </h1>
+            </HeadShake>
             <AnimatedText
               type="words" // animate words or chars
               animation={{
