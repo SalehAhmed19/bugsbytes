@@ -16,10 +16,10 @@ const Banner = () => {
         <div className="flex justify-between items-center lg:mt-20 mt-5 lg:px-20">
           <div className="flex flex-col justify-center items-center lg:mt-0 mt-5 w-full">
             <Fade big>
-              <img className="w-10 lg:w-56 m-5" src={MainLogo} alt="" />
+              <img className="w-28 lg:w-56 m-20 lg:m-5" src={MainLogo} alt="" />
             </Fade>
             <HeadShake forever={true}>
-              <h1 className="text-xl lg:text-6xl font-bold text-[#6BF176]">
+              <h1 className="text-xl lg:text-6xl font-bold text-[#6BF176] hidden lg:block">
                 BugsBytes
               </h1>
             </HeadShake>
@@ -35,7 +35,7 @@ const Banner = () => {
               interval={0.06}
               duration={0.8}
               tag="h1"
-              className="animated-paragraph font-bold text-sm lg:text-xl text-[#6BF176] text-center code lg:mt-10"
+              className="animated-paragraph font-bold text-sm lg:text-xl text-[#6BF176] text-center code lg:mt-10 hidden lg:block"
               includeWhiteSpaces
               threshold={0.1}
               rootMargin="20%"
