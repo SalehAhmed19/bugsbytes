@@ -1,26 +1,27 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import Pulse from "react-reveal/Pulse";
 import Shape1 from "../Assets/Shapes/shape-1.png";
 import Shape2 from "../Assets/Shapes/shape-2.png";
 
 const About = () => {
   return (
     <div className="mb-10 pt-20 bg-[#02411c2f] relative" id="about">
-      <Fade right>
+      <Pulse forever={true}>
         {/* <div className="bg-[#079C34] h-44 w-44 rounded-full absolute -right-20 bottom-50 hidden lg:block backdrop-filter blur-lg"></div> */}
         <img
           className="w-28 absolute top-5 -left-0 hidden lg:block backdrop-filter blur-lg"
           src={Shape1}
           alt=""
         />
-      </Fade>
-      <Fade left>
+      </Pulse>
+      <Pulse forever={true}>
         <img
           className="w-24 absolute top-5 -right-0 hidden lg:block backdrop-filter blur-lg"
           src={Shape2}
           alt=""
         />
-      </Fade>
+      </Pulse>
       <Fade down>
         <h1 className="text-3xl lg:text-6xl text-center font-bold text-[#fff]">
           Choose The Best <br />{" "}

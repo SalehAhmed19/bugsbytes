@@ -1,6 +1,4 @@
-import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
-import TextField from "@mui/material/TextField";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -54,6 +52,9 @@ export default function Contact() {
               <h2 className="lg:text-5xl font-bold text-center text-[#6BF176]">
                 +8801700-000000
               </h2>
+              <h4 className="lg:text-xl font-bold text-center text-[#6BF176]">
+                Bogra, Bangladesh
+              </h4>
             </Fade>
           </div>
         </Grid>
@@ -68,59 +69,61 @@ export default function Contact() {
           elevation={6}
           square
         >
-          <Box
-            sx={{
-              my: 8,
-              mx: 4,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-          >
+          <Fade>
             <Box
-              component="form"
-              noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 1 }}
+              sx={{
+                my: 8,
+                mx: 4,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
             >
-              <input
-                type="text"
-                required
-                placeholder="Your Name"
-                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
-              />
-              <input
-                type="text"
-                required
-                placeholder="Your Email"
-                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
-              />
-              <input
-                type="text"
-                required
-                placeholder="Phone Number"
-                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
-              />
-              <input
-                type="text"
-                required
-                placeholder="Your Address"
-                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
-              />
-              <textarea
-                type="text"
-                required
-                placeholder="Your Message"
-                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
-              />
-              <button
-                type="submit"
-                className="bg-[#079C34] w-full p-3 rounded-md my-4"
+              <Box
+                component="form"
+                noValidate
+                onSubmit={handleSubmit}
+                sx={{ mt: 1 }}
               >
-                Send Message
-              </button>
+                <input
+                  type="text"
+                  required
+                  placeholder="Your Name"
+                  className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Your Email"
+                  className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Phone Number"
+                  className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Your Address"
+                  className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                />
+                <textarea
+                  type="text"
+                  required
+                  placeholder="Your Message"
+                  className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                />
+                <button
+                  type="submit"
+                  className="bg-[#079C34] w-full p-3 rounded-md my-4"
+                >
+                  Send Message
+                </button>
+              </Box>
             </Box>
-          </Box>
+          </Fade>
         </Grid>
       </Grid>
     </ThemeProvider>

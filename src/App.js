@@ -6,6 +6,7 @@ import logo from "./Assets/Img/logo-bb-2.png";
 import Home from "./Pages/Home";
 import ButtonAppBar from "./Shared/ButtonAppBar";
 import Footer from "./Shared/Footer";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -36,6 +37,10 @@ const App = () => {
         </div>
       ) : (
         <div className="bg-[#02411C]">
+          <MessengerCustomerChat
+            pageId={process.env.REACT_APP_FB_PAGE_ID}
+            appId={process.env.REACT_APP_FB_APP_ID}
+          />
           <ButtonAppBar />
           <Home />
           <Footer />

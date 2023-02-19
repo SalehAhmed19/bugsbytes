@@ -4,14 +4,14 @@ import Fade from "react-reveal/Fade";
 import HeadShake from "react-reveal/HeadShake";
 import AnimatedText from "react-animated-text-content";
 import MainLogo from "../Assets/Img/logo-bb-2.png";
-import VideoBG from "../Assets/VideoBg/video4.mp4";
+// import VideoBG from "../Assets/VideoBg/video4.mp4";
 import banner from "../Assets/Img/banner.png";
 import "../Styles/Banner.css";
 
 const Banner = () => {
   return (
-    <div className="bg-[#020D0A] bg-banner">
-      <video className="opacity-20" src={VideoBG} muted loop autoPlay />
+    <div className="bg-[#020D0A] bg-banner h-screen">
+      {/* <video className="opacity-20" src={VideoBG} muted loop autoPlay /> */}
       <div className="absolute w-full lg:h-full top-0 ">
         <div className="flex justify-between items-center lg:mt-20 mt-5 lg:px-20">
           <div className="flex flex-col justify-center items-center lg:mt-0 mt-5 w-full">

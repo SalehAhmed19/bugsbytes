@@ -22,7 +22,8 @@ const navItems = [
   { _id: 1, menu: "Home", hash: "#" },
   { _id: 2, menu: "About", hash: "#about" },
   { _id: 3, menu: "Services", hash: "#services" },
-  { _id: 4, menu: "Contact", hash: "#contact" },
+  { _id: 4, menu: "FAQ", hash: "#faq" },
+  { _id: 5, menu: "Contact", hash: "#contact" },
 ];
 
 function ButtonAppBar(props) {
