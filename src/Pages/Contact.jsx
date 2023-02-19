@@ -87,31 +87,31 @@ export default function Contact() {
                 type="text"
                 required
                 placeholder="Your Name"
-                className="border border-[#6BF176] bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
               />
               <input
                 type="text"
                 required
                 placeholder="Your Email"
-                className="border border-[#6BF176] bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
               />
               <input
                 type="text"
                 required
                 placeholder="Phone Number"
-                className="border border-[#6BF176] bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
               />
               <input
                 type="text"
                 required
                 placeholder="Your Address"
-                className="border border-[#6BF176] bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
               />
               <textarea
                 type="text"
                 required
                 placeholder="Your Message"
-                className="border border-[#6BF176] bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
+                className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full placeholder-[#1c6524] my-3"
               />
               <button
                 type="submit"

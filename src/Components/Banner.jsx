@@ -19,7 +19,7 @@ const Banner = () => {
               <img className="w-10 lg:w-56 m-5" src={MainLogo} alt="" />
             </Fade>
             <HeadShake forever={true}>
-              <h1 className="text-xl lg:text-6xl font-bold text-[#54B65B]">
+              <h1 className="text-xl lg:text-6xl font-bold text-[#6BF176]">
                 BugsBytes
               </h1>
             </HeadShake>
@@ -35,7 +35,7 @@ const Banner = () => {
               interval={0.06}
               duration={0.8}
               tag="h1"
-              className="animated-paragraph font-bold text-sm lg:text-xl text-[#54B65B] text-center code lg:mt-10"
+              className="animated-paragraph font-bold text-sm lg:text-xl text-[#6BF176] text-center code lg:mt-10"
               includeWhiteSpaces
               threshold={0.1}
               rootMargin="20%"

@@ -5,23 +5,21 @@ import Fade from "react-reveal/Fade";
 import "../Styles/Footer.css";
 import Shape1 from "../Assets/Shapes/shape-1.png";
 import Shape2 from "../Assets/Shapes/shape-2.png";
+import logo from "../Assets/Img/logo-bb-2.png";
 
 const Footer = () => {
   function Copyright(props) {
     return (
-      <Typography
-        variant="body2"
-        color="text.secondary"
-        align="center"
-        {...props}
-      >
-        {"Copyright © "}
-        <Link color="inherit" href="https://mui.com/">
-          BugsBytes
-        </Link>{" "}
-        {new Date().getFullYear()}
-        {"."}
-      </Typography>
+      <div className="flex justify-center items-center mt-10">
+        <img className="w-6 mx-5" src={logo} alt="" />
+        <p className="text-[#fff]">
+          Copyright &copy;{" "}
+          <a className="underline" href="#home">
+            BugsBytes{" "}
+          </a>
+          {new Date().getFullYear()}
+        </p>
+      </div>
     );
   }
   const footers = [

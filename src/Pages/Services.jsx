@@ -5,9 +5,21 @@ import "../Styles/Services.css";
 
 const Services = () => {
   const services = [
-    { _id: 1, service: "UI / UX Design" },
-    { _id: 2, service: "Web Development" },
-    { _id: 3, service: "Penetration Testing" },
+    {
+      _id: 1,
+      service: "UI / UX Design",
+      content: "Designing user experiences that make life simpler",
+    },
+    {
+      _id: 2,
+      service: "Web Development",
+      content: "Bringing Your Vision to Life on the Web",
+    },
+    {
+      _id: 3,
+      service: "Penetration Testing",
+      content: "Uncovering the Weaknesses Before the Attackers Do",
+    },
   ];
   return (
     <div className="pt-20 bg-[#02201A] bg-service" id="services">

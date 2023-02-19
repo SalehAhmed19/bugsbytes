@@ -38,7 +38,12 @@ export default function ServiceCard({ service }) {
           borderColor: "#000",
         }}
       >
-        <Typography level="h2" fontSize="lg" textColor="#000">
+        <Typography
+          sx={{ fontWeight: "800", color: "#004F1F" }}
+          level="h2"
+          fontSize="lg"
+          textColor="#000"
+        >
           {service.service}
         </Typography>
         <CardCover
@@ -64,9 +69,14 @@ export default function ServiceCard({ service }) {
             borderColor: "#000",
           }}
         >
-          <Typography level="h2" fontSize="lg" textColor="#fff" m={3}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti,
-            incidunt.
+          <Typography
+            sx={{ fontWeight: "800" }}
+            level="h2"
+            fontSize="xl"
+            textColor="#fff"
+            m={3}
+          >
+            {service.content}
           </Typography>
         </CardContent>
       </Card>
