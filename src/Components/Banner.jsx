@@ -10,7 +10,7 @@ import "../Styles/Banner.css";
 
 const Banner = () => {
   return (
-    <div className="bg-[#020D0A] bg-banner h-screen">
+    <div className="bg-[#020D0A] bg-banner h-80 lg:h-screen">
       {/* <video className="opacity-20" src={VideoBG} muted loop autoPlay /> */}
       <div className="absolute w-full lg:h-full top-0 ">
         <div className="flex justify-between items-center lg:mt-20 mt-5 lg:px-20">
