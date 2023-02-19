@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Link, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Fade from "react-reveal/Fade";
+import "../Styles/Footer.css";
 
 const Footer = () => {
   function Copyright(props) {
@@ -52,9 +53,9 @@ const Footer = () => {
   ];
   return (
     <Fade up>
-      <div className="bg-[#020E09] relative w-full">
+      <div className="bg-[#020E09] bg-footer relative w-full">
         <Fade right>
-          <div className="bg-[#079C34] h-40 w-40 rounded-full absolute -right-20 bottom-60 hidden lg:block"></div>
+          <div className="bg-[#079C34] h-44 w-44 rounded-full absolute -right-20 bottom-60 hidden lg:block"></div>
         </Fade>
         <Fade left>
           <div className="bg-[#079C34] h-60 w-96 rounded-full absolute -left-40 bottom-0 hidden lg:block"></div>

@@ -10,8 +10,8 @@ import "../Styles/Banner.css";
 
 const Banner = () => {
   return (
-    <div className="bg-[#020D0A]">
-      <video className="opacity-10" src={VideoBG} muted loop autoPlay />
+    <div className="bg-[#020D0A] bg-banner">
+      <video className="opacity-20" src={VideoBG} muted loop autoPlay />
       <div className="absolute w-full lg:h-full top-0 ">
         <div className="flex justify-between items-center lg:mt-20 mt-5 lg:px-20">
           <div className="flex flex-col justify-center items-center lg:mt-0 mt-5 w-full">
@@ -35,7 +35,7 @@ const Banner = () => {
               interval={0.06}
               duration={0.8}
               tag="h1"
-              className="animated-paragraph font-bold lg:text-xl text-[#54B65B] text-center code lg:mt-10"
+              className="animated-paragraph font-bold text-sm lg:text-xl text-[#54B65B] text-center code lg:mt-10"
               includeWhiteSpaces
               threshold={0.1}
               rootMargin="20%"

@@ -1,46 +1,5 @@
-// import * as React from "react";
-// import AppBar from "@mui/material/AppBar";
-// import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
-// import Button from "@mui/material/Button";
-// import IconButton from "@mui/material/IconButton";
-// import MenuIcon from "@mui/icons-material/Menu";
 import logo from "../Assets/Img/logo-bb.png";
 
-// export default function ButtonAppBar() {
-//   return (
-//     <Box sx={{ flexGrow: 1 }}>
-//       <AppBar
-//         position="static"
-//         sx={{
-//           backgroundColor: "#020D0A",
-//         }}
-//       >
-//         <Toolbar>
-//           <IconButton
-//             size="large"
-//             edge="start"
-//             color="inherit"
-//             aria-label="menu"
-//             sx={{ mr: 2 }}
-//           >
-//             <MenuIcon />
-//           </IconButton>
-//           <div className="w-full flex justify-between">
-//             <img className="w-10 hidden lg:block" src={logo} alt="" />
-//             <div className="hidden lg:block">
-//               <Button color="inherit">Home</Button>
-//               <Button color="inherit">About</Button>
-//               <Button color="inherit">Services</Button>
-//               <Button color="inherit">Portfolio</Button>
-//               <Button color="inherit">Contact</Button>
-//             </div>
-//           </div>
-//         </Toolbar>
-//       </AppBar>
-//     </Box>
-//   );
-// }
 import * as React from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
@@ -58,7 +17,13 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+// const navItems = ["Home", "About", "Services", "Contact"];
+const navItems = [
+  { _id: 1, menu: "Home", hash: "#" },
+  { _id: 2, menu: "About", hash: "#about" },
+  { _id: 3, menu: "Services", hash: "#services" },
+  { _id: 4, menu: "Contact", hash: "#contact" },
+];
 
 function ButtonAppBar(props) {
   const { window } = props;
@@ -75,9 +40,9 @@ function ButtonAppBar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item._id} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
+              <ListItemText primary={item.menu} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -105,9 +70,11 @@ function ButtonAppBar(props) {
           <img className="w-10 hidden lg:block" src={logo} alt="" />
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
-              </Button>
+              <a href={item.hash}>
+                <Button key={item._id} sx={{ color: "#fff" }}>
+                  {item.menu}
+                </Button>
+              </a>
             ))}
           </Box>
         </Toolbar>
