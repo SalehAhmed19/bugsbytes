@@ -3,6 +3,8 @@ import { Grid, Link, Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Fade from "react-reveal/Fade";
 import "../Styles/Footer.css";
+import Shape1 from "../Assets/Shapes/shape-1.png";
+import Shape2 from "../Assets/Shapes/shape-2.png";
 
 const Footer = () => {
   function Copyright(props) {
@@ -54,11 +56,19 @@ const Footer = () => {
   return (
     <Fade up>
       <div className="bg-[#020E09] bg-footer relative w-full">
-        <Fade right>
-          <div className="bg-[#079C34] h-44 w-44 rounded-full absolute -right-20 bottom-60 hidden lg:block"></div>
-        </Fade>
         <Fade left>
-          <div className="bg-[#079C34] h-60 w-96 rounded-full absolute -left-40 bottom-0 hidden lg:block"></div>
+          <img
+            className="w-32 absolute bottom-0 -left-0 hidden lg:block"
+            src={Shape1}
+            alt=""
+          />
+        </Fade>
+        <Fade right>
+          <img
+            className="w-20 absolute -right-0 hidden lg:block"
+            src={Shape2}
+            alt=""
+          />
         </Fade>
         <Container
           maxWidth="md"
