@@ -40,6 +40,7 @@ const App = () => {
           <MessengerCustomerChat
             pageId={process.env.REACT_APP_FB_PAGE_ID}
             appId={process.env.REACT_APP_FB_APP_ID}
+            themeColor="#028131"
           />
           <ButtonAppBar />
           <Home />

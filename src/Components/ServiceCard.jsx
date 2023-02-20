@@ -11,6 +11,7 @@ export default function ServiceCard({ service }) {
     <Box
       sx={{
         margin: "0 auto",
+        cursor: "pointer",
         perspective: "1000px",
         transition: "transform 0.4s",
         "& > div, & > div > div": {
