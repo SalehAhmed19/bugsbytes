@@ -103,7 +103,7 @@ export default function Contact() {
                   placeholder="Phone Number"
                   className="bg-[#0281314a] text-[#6BF176] py-3 px-3 rounded-md w-full focus:outline-none placeholder-[#1c6524] my-3"
                 />
-                <inpu
+                <input
                   type="text"
                   required
                   placeholder="Your Address"

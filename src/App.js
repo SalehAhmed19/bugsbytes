@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HashLoader, BarLoader } from "react-spinners";
+import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
+import ScrollToTop from "react-scroll-to-top";
 import Pulse from "react-reveal/Pulse";
 import "./App.css";
 import logo from "./Assets/Img/logo-bb-2.png";
@@ -47,6 +49,17 @@ const App = () => {
           <Footer />
         </div>
       )}
+      <ScrollToTop
+        color="#02411C"
+        style={{
+          boxShadow: "none",
+          backgroundColor: "#54B65B",
+          borderRadius: "50%",
+        }}
+        component={<ArrowDropUpIcon className="text-[#02411C]" />}
+        top={500}
+        smooth
+      />
     </div>
   );
 };
