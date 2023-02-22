@@ -47,19 +47,20 @@ const App = () => {
           <ButtonAppBar />
           <Home />
           <Footer />
+          <ScrollToTop
+            color="#02411C"
+            style={{
+              boxShadow: "none",
+              backgroundColor: "#54B65B",
+              borderRadius: "50%",
+              left: 50,
+            }}
+            component={<ArrowDropUpIcon className="text-[#02411C]" />}
+            top={500}
+            smooth
+          />
         </div>
       )}
-      <ScrollToTop
-        color="#02411C"
-        style={{
-          boxShadow: "none",
-          backgroundColor: "#54B65B",
-          borderRadius: "50%",
-        }}
-        component={<ArrowDropUpIcon className="text-[#02411C]" />}
-        top={500}
-        smooth
-      />
     </div>
   );
 };
