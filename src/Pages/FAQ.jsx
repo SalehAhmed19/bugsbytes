@@ -57,7 +57,7 @@ export default function FAQ() {
           Frequently <br className="block lg:hidden" /> Ask Questions
         </h1>
       </Fade>
-      <div className="w-4/5 mx-auto">
+      <div className="lg:w-4/5 lg:mx-auto mx-4">
         <Accordion
           sx={{
             borderRadius: "5px",
