@@ -53,7 +53,7 @@ const Footer = () => {
   ];
   return (
     <Fade up>
-      <div className="bg-[#020E09] bg-footer relative w-full">
+      <div className="bg-[#020E09] bg-footer relative w-full lg:pt-24 pt-36">
         <Fade left>
           <img
             className="w-32 absolute bottom-0 -left-0 hidden lg:block"

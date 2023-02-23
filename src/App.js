@@ -20,7 +20,7 @@ const App = () => {
   }, []);
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <div
           style={{
             height: "100vh",
@@ -37,30 +37,31 @@ const App = () => {
             <BarLoader color="#02411C" size={100} />
           </div>
         </div>
-      ) : (
-        <div className="bg-[#02411C]">
-          <MessengerCustomerChat
-            pageId={process.env.REACT_APP_FB_PAGE_ID}
-            appId={process.env.REACT_APP_FB_APP_ID}
-            themeColor="#028131"
-          />
-          <ButtonAppBar />
-          <Home />
-          <Footer />
-          <ScrollToTop
-            color="#02411C"
-            style={{
-              boxShadow: "none",
-              backgroundColor: "#54B65B",
-              borderRadius: "50%",
-              left: 50,
-            }}
-            component={<ArrowDropUpIcon className="text-[#02411C]" />}
-            top={500}
-            smooth
-          />
-        </div>
-      )}
+      ) : ( */}
+      <div className="bg-[#02411C]">
+        <MessengerCustomerChat
+          pageId={process.env.REACT_APP_FB_PAGE_ID}
+          appId={process.env.REACT_APP_FB_APP_ID}
+          themeColor="#028131"
+        />
+        <ButtonAppBar />
+        <Home />
+        <Footer />
+        <ScrollToTop
+          color="#02411C"
+          style={{
+            boxShadow: "none",
+            backgroundColor: "#54B65B",
+            borderRadius: "50%",
+            left: 50,
+            zIndex: 20,
+          }}
+          component={<ArrowDropUpIcon className="text-[#02411C]" />}
+          top={500}
+          smooth
+        />
+      </div>
+      {/* )} */}
     </div>
   );
 };
