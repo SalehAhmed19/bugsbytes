@@ -20,7 +20,7 @@ const WhyUs = () => {
         <Fade right>
           <h4 className="underline font-bold">WHY CHOOSE US</h4>
           <h1 className="lg:text-6xl text-3xl font-bold text-[#fff] my-5">
-            Why choose our own IT service?
+            Why choose our IT service?
           </h1>
           <div className="flex flex-col lg:flex-row">
             <div className="my-5 lg:mx-5">
